@@ -1,3 +1,5 @@
+#   LAMP stack implementation
+
 `sudo apt update`
 
 ![updating list of packages](./images/apache_installation/packages_list_update.PNG)
@@ -43,6 +45,8 @@ open TCP to port 80 on AWS console
 `curl -s http://35.181.26.164/latest/meta-data/public-ipv4`
 
 ![public address retrieval](./images/apache_installation/public_ip_address_retrieval.PNG)
+
+
 
 
 
