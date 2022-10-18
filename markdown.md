@@ -46,6 +46,24 @@ open TCP to port 80 on AWS console
 
 ![public address retrieval](./images/apache_installation/public_ip_address_retrieval.PNG)
 
+`sudo apt update`
+
+![sudo apt update](./images/mysql_installation/sudo_apt_update.PNG)
+
+`sudo apt upgrade`
+
+![kernel upgrade](./images/mysql_installation/kernel_upgrade.PNG)
+
+![outdated libraries](./images/mysql_installation/outdated_libraries.PNG)
+
+![sudo apt upgrade](./images/mysql_installation/sudo_apt_upgrade_page1.PNG)
+
+![sudo apt upgrade](./images/mysql_installation/sudo_apt_upgrade_page2.PNG)
+
+
+
+
+
 
 
 
