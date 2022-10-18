@@ -46,6 +46,8 @@ open TCP to port 80 on AWS console
 
 ![public address retrieval](./images/apache_installation/public_ip_address_retrieval.PNG)
 
+## MYSQL installation
+
 `sudo apt update`
 
 ![sudo apt update](./images/mysql_installation/sudo_apt_update.PNG)
@@ -60,9 +62,37 @@ open TCP to port 80 on AWS console
 
 ![sudo apt upgrade](./images/mysql_installation/sudo_apt_upgrade_page2.PNG)
 
+`sudo apt install msql-server`
 
+![sql server installation](./images/mysql_installation/mysql-server_install_page1.PNG)
 
+![sql server installation](./images/mysql_installation/mysql-server_install_page2.PNG)
 
+`sudo service mysql status`
+
+![sql status](./images/mysql_installation/sql_status.PNG)
+
+`sudo mysql`
+
+![sudo mysql](./images/mysql_installation/sudo_mysql.PNG)
+
+set password for root user
+
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
+
+start interactive script
+
+`sudo msql_secure_installation`
+
+![mysql password](./images/mysql_installation/password_setting_page1.PNG)
+
+![mysql password](./images/mysql_installation/password_setting_page2.PNG)
+
+`sudo mysql -p`
+
+![mysql console login](./images/mysql_installation/mysql_login_with_password.PNG)
+
+### 
 
 
 
