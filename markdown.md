@@ -1,4 +1,6 @@
-#   LAMP stack implementation
+#   LAMP STACK IMPLEMENTATION
+
+##  INSTALLING APACHE2
 
 `sudo apt update`
 
@@ -46,7 +48,7 @@ open TCP to port 80 on AWS console
 
 ![public address retrieval](./images/apache_installation/public_ip_address_retrieval.PNG)
 
-## MYSQL installation
+### MYSQL installation
 
 `sudo apt update`
 
@@ -92,7 +94,11 @@ start interactive script
 
 ![mysql console login](./images/mysql_installation/mysql_login_with_password.PNG)
 
-### 
+ INSTALLING PHP
+
+
+
+
 
 
 
