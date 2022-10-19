@@ -96,6 +96,64 @@ start interactive script
 
  INSTALLING PHP
 
+`sudo apt install php libapache2-mod-php php-mysql`
+
+![php installation](./images/php_installation/php_installation.PNG)
+
+`php -v`
+
+![php version check](./images/php_installation/php_version.PNG)
+
+CREATING A VIRTUAL HOST FOR YOUR WEBSITE USING APACHE
+
+`sudo mkdir /var/www/projectlamp`
+
+![creating project lamp directory](./images/creating_virtual_host_using_apache/projectlamp_directory_creation.PNG)
+
+`sudo chown -R $USER:$USER /var/www/projectlamp`
+
+`sudo vi /etc/apache2/sites-available/projectlamp.conf`
+
+`<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>`
+
+`sudo ls /etc/apache2/sites-available`
+
+![new files in sites-available directory](./images/creating_virtual_host_using_apache/files_in_sites%20-available_directory.PNG)
+
+`sudo a2ensite projectlamp`
+
+![enabling new virtual host](./images/creating_virtual_host_using_apache/enabling_virtual_host.PNG)
+
+`sudo a2dissite 000-default`
+
+![disabling default website that comes installed with apache](./images/creating_virtual_host_using_apache/default_apache_website_disabling.PNG)
+
+![disabled apache default website](./images/creating_virtual_host_using_apache/apache_default_website_dissabled.PNG)
+
+`sudo apache2ctl configtest`
+
+![checking for configuration syntax errors](./images/creating_virtual_host_using_apache/config_syntax_check.PNG)
+
+`sudo systemctl reload apache2`
+
+`sudo echo 'Hello LAMP from hostname' $(curl -s http://15.188.53.3/latest/meta-data/public-hostname) 'with public IP' $(curl-s http://15.188.53.3/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
+
+[public ip address](http://15.188.53.3/)
+
+![website url showing  echo command](./images/creating_virtual_host_using_apache/website_url.PNG)
+
+[public dns](http://ec2-15-188-53-3.eu-west-3.compute.amazonaws.com/)
+
+![public dns access to website](./images/creating_virtual_host_using_apache/public_dns.PNG)
+
+ENEABLING PHP ON WEBSITE
 
 
 
