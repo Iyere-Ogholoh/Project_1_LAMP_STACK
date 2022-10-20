@@ -162,14 +162,25 @@ sudo vim /etc/apache2/mods-enabled/dir.conf
         #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
         #To this:
         DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
-<IfModule>`
+</IfModule>`
 
 ![vim changing order of index.html and index.php](./images/php_installation/changing_order_of_index.html%26index.php.PNG) 
 
 `sudo systemctl reload apache2`
 
-
+vim /var/www/projectlamp/index.php
         
+`<?php
+phpinfo();`
+
+![php test script](./images/php_installation/php_test_script.PNG)
+
+![php script web page](./images/php_installation/php_script_web_page.PNG)
+
+`sudo rm /var/www/projectlamp/index.php`
+
+![php script web page removed](./images/php_installation/php_script_web_page_removed.PNG)
+
 
 
 
