@@ -157,19 +157,19 @@ ENEABLING PHP ON WEBSITE
 
 sudo vim /etc/apache2/mods-enabled/dir.conf
 
-<IfModule mod_dir.c>
+`<IfModule mod_dir.c>
         #Change this:
-        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml 
-index.htm
+        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
         #To this:
-        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml
-index.htm
-</IfModule>
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+<IfModule>`
 
-`sudo a2ensite projectlamp`
+![vim changing order of index.html and index.php](./images/php_installation/changing_order_of_index.html%26index.php.PNG) 
 
-`sudo a2dissite 000-default`
+`sudo systemctl reload apache2`
 
-`sudo apache2ctl configtest`
+
+        
+
 
 
