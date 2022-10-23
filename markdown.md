@@ -80,7 +80,7 @@ open TCP to port 80 on AWS console
 
 set password for root user
 
-`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';`
+`'ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1`;`
 
 start interactive script
 
@@ -180,6 +180,8 @@ phpinfo();`
 `sudo rm /var/www/projectlamp/index.php`
 
 ![php script web page removed](./images/php_installation/php_script_web_page_removed.PNG)
+
+END OF PROJECT
 
 
 
